@@ -1,4 +1,3 @@
-from api_yamdb.settings import EXC_NAME, MAX_REVIEW_SCORE, MIN_REVIEW_SCORE
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from rest_framework import serializers
@@ -6,6 +5,8 @@ from rest_framework.relations import SlugRelatedField
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.tokens import RefreshToken
 from reviews.models import Category, Comment, Genre, Review, Title, User
+
+from api_yamdb.settings import EXC_NAME, MAX_REVIEW_SCORE, MIN_REVIEW_SCORE
 
 
 class UserSerializer(serializers.ModelSerializer):

@@ -1,7 +1,7 @@
-from api_yamdb.settings import EXC_NAME
+from api.exceptions import CodeAPIException
 from rest_framework import permissions
 
-from api.exceptions import CodeAPIException
+from api_yamdb.settings import EXC_NAME
 
 
 class IsOwnerOrReadOnly(permissions.BasePermission):

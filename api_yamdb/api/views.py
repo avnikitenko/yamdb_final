@@ -1,4 +1,10 @@
-from api_yamdb.settings import CONFIRMATION_EMAIL, EXC_NAME
+from api.pagination import PostsPagination
+from api.permissions import IsAdmin, IsAdminOrReadOnly, IsOwnerOrReadOnly
+from api.serializers import (CategorySerializer, CommentSerializer,
+                             GenreSerializer, RegistrationSerializer,
+                             ReviewSerializer, TitleSerializerGet,
+                             TitleSerializerPostPatchDel, TokenSerializer,
+                             UserSerializer)
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404
@@ -7,13 +13,7 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from reviews.models import Category, Genre, Review, Title, User
 
-from api.pagination import PostsPagination
-from api.permissions import IsAdmin, IsAdminOrReadOnly, IsOwnerOrReadOnly
-from api.serializers import (CategorySerializer, CommentSerializer,
-                             GenreSerializer, RegistrationSerializer,
-                             ReviewSerializer, TitleSerializerGet,
-                             TitleSerializerPostPatchDel, TokenSerializer,
-                             UserSerializer)
+from api_yamdb.settings import CONFIRMATION_EMAIL, EXC_NAME
 
 
 class UserViewSet(viewsets.ModelViewSet):
