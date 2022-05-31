@@ -5,4 +5,4 @@ yamdb_final
 API для проекта YaTube (ДЗ курса Яндекс.Практикум)  
 **Автор:** Никитенко Алексей, когорта 27
 
-![yamdb_workflow.yml](https://github.com/avnikitenko/yamdb_final/actions/workflows/yamdb_workflow/badge.svg)
+![yamdb_workflow.yml](https://github.com/avnikitenko/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
