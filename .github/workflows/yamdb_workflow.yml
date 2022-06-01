@@ -44,7 +44,7 @@ jobs:
         with:
           context: ./api_yamdb/
           push: true
-          tags: avnikitenko/api_yamdb:latest
+          tags: avnikitenko/api_yamdb
 
   deploy:
     runs-on: ubuntu-latest
