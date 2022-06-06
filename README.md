@@ -1,10 +1,11 @@
-# Описание проекта
+# YaMDb
+## Описание проекта
 Проект YaMDb собирает отзывы пользователей на различные произведения.
 Документация проекта доступна на сервере: https://avnikitenko.ddns.net/redoc/ (если домен недоступен, подключайтесь по IP: http://84.201.155.158/redoc/)
 
 
 ## Информация о проекте
-API для проекта YaTube (ДЗ курса Яндекс.Практикум)  
+API для проекта YaMDb (ДЗ курса Яндекс.Практикум)  
 **Автор:** Никитенко Алексей, когорта 27
 
 ![yamdb_workflow.yml](https://github.com/avnikitenko/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
