@@ -59,6 +59,8 @@ jobs:
           sudo docker pull avnikitenko/api_yamdb
           sudo docker stop $(sudo docker ps -a -q)
           sudo docker run --rm -d -p 80:80 avnikitenko/api_yamdb
+          sudo docker-compose exec web python manage.py migrate
+          sudo docker-compose exec web python manage.py collectstatic --no-input 
 
   send_message:
     runs-on: ubuntu-latest
